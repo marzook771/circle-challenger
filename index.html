@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Draw The Shape</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <header>
+            <h1>Draw The Shape</h1>
+
+            <div class="info">
+                <div>
+                    <span>Level</span>
+                    <strong id="level">1</strong>
+                </div>
+
+                <div>
+                    <span>Time</span>
+                    <strong id="timer">30</strong>
+                </div>
+
+                <div>
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="instruction">
+            <h2 id="shapeName">Circle</h2>
+
+            <p>
+                Draw over the shape using your finger or mouse.
+            </p>
+        </div>
+
+
+        <div class="canvas-container">
+
+            <canvas id="drawingCanvas"></canvas>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+            <button id="checkBtn">
+                Check Drawing
+            </button>
+
+        </div>
+
+
+        <div id="result" class="result hidden">
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultText"></p>
+
+            <button id="nextBtn">
+                Next Level
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
